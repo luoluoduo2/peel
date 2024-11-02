@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>购物车</h2>
+	<p class="warning-text">牢记总金额，按提示金额付款</p> <!-- 显眼的红字提示 -->
+	<p class="warning-text">牢记订单编号，你只有这一次截图机会</p> <!-- 显眼的红字提示 -->
+	<p class="warning-text">物流信息加客服QQ，任何问题加Q解决</p> <!-- 显眼的红字提示 -->
+	<p class="warning-text">QQ：348352240</p> <!-- 显眼的红字提示 -->
+    <div id="cart-list"></div> <!-- 用于显示购物车商品列表 -->
+    <p id="total-price">总价：¥0</p>
+    <button onclick="checkout()">去结算</button>
+
+    <script src="scripts/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>结算页面</title>
+</head>
+<body>
+    <h2>填写收货信息</h2>
+    <form id="checkout-form">
+        <input type="text" id="name" placeholder="姓名" required>
+        <input type="tel" id="phone" placeholder="电话" required>
+        <input type="text" id="address" placeholder="地址" required>
+        <h3>选择付款方式</h3>
+        <label><input type="radio" name="payment" value="wechat" required> 微信</label>
+        <label><input type="radio" name="payment" value="alipay"> 支付宝</label>
+        <button type="submit">确认下单</button>
+    </form>
+
+    <script src="scripts/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>商品管理页面</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>商品管理页面</h2>
+
+    <!-- 新增商品表单 -->
+    <div id="add-product-form">
+        <h3>添加新商品</h3>
+        <input type="text" id="product-name" placeholder="商品名称" required>
+        <input type="number" id="product-price" placeholder="价格" required>
+        <button onclick="addProduct()">添加商品</button>
+    </div>
+	
+	<h3>商品列表</h3>
+	    <div id="admin-product-list"></div>
+
+    <!-- 订单信息列表 -->
+    <h3>订单列表</h3>
+	<button onclick="clearOrders()">清空所有订单</button> <!-- 清空订单按钮 -->
+    <div id="order-list"></div> <!-- 用于显示订单信息 -->
+
+    <script src="scripts/manage.js"></script>
+</body>
+</html>
